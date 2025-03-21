@@ -14,7 +14,7 @@ html, body {
 
 /* header CSS start here  */
 #header {
-  background-color: #36393c;
+  background-color: #454b52;
   color: white;
   text-align: center;
   padding: 20px;
@@ -28,12 +28,13 @@ html, body {
 }
 
 #logo {
-  color: rgb(20, 209, 181);
+  color: rgb(62, 183, 165);
   font-weight: bold;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
 }
 
 .bg-color {
-  background-color: rgb(20, 209, 181);
+  background-color: rgb(62, 183, 165);
   color: #313030;
   padding: 2px 5px;
   border-radius: 10px;
@@ -45,7 +46,7 @@ html, body {
 .theme1 {
   color: white;
   padding: 10px;
-  background-color: rgb(20, 209, 181);
+  background-color: rgb(62, 183, 165);
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
@@ -81,7 +82,7 @@ html, body {
 }
 
 .links a:focus {
-  color: rgb(20, 209, 181);
+  color: rgb(62, 183, 165);
 }
 .menu-icon {
   display: none;
@@ -132,7 +133,7 @@ html, body {
     top: 60px;
     left: 0px;
     width: 100%;
-    background-color: #36393c;
+    background-color: #454b52;
     z-index: 1000;
     flex-direction: column;
     gap: 10px;
@@ -148,7 +149,7 @@ html, body {
   justify-content: space-evenly;
   align-items: center;
   height: 100vh;
-  background-color: #454b52;
+  background-color: #4f5a66;
 }
 .home-text {
   width: 50%;
@@ -177,31 +178,32 @@ html, body {
   width: 2.5rem;
   height: 2.5rem;
   background: transparent;
-  border: 0.2rem solid rgb(20, 209, 181);
+  border: 0.2rem solid rgb(62, 183, 165);
   border-radius: 50%;
-  color: rgb(20, 209, 181);
+  color: rgb(62, 183, 165);
   transition: all 0.6s ease;
 }
 .social-icons a:hover {
-  background: rgb(20, 209, 181);
+  background: rgb(62, 183, 165);
   color: #161b22;
-  box-shadow: 0 0 1rem rgb(20, 209, 181);
+  box-shadow: 0 0 1rem rgb(62, 183, 165);
+  transform: scale(0.9);
 }
 .cv-btn {
-  background-color: rgb(20, 209, 181);
+  background-color: rgb(62, 183, 165);
   padding: 10px 20px;
-  background: rgb(20, 209, 181) f;
+  background: rgb(62, 183, 165) f;
   border: none;
   color: black;
   border-radius: 15px;
   font-size: 1rem;
   cursor: pointer;
   margin-bottom: 10px;
-  box-shadow: 0 0 1rem rgb(20, 209, 181);
-  transform: 0.6s ease;
+  box-shadow: 0 0 1rem rgb(62, 183, 165);
+  transition: 0.6s ease;
 }
 .cv-btn:hover {
-  transform: scale(1.02);
+  transform: scale(0.9);
   box-shadow: none;
 }
 .resume-btn {
@@ -213,7 +215,7 @@ html, body {
   animation: bounce;
   animation-duration: 2s;
   animation-iteration-count: infinite;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 1);
 }
 @keyframes bounce {
   0% {
@@ -271,7 +273,7 @@ html, body {
 /* About CSS start here  */
 
 #about {
-  background-color: #36393c;
+  background-color: #454b52;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -286,6 +288,7 @@ html, body {
   border-radius: 15px;
   margin-left: 120px;
   margin-top: 130px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 1);
 }
 .about-text {
   padding-left: 20px;
@@ -295,7 +298,7 @@ html, body {
   margin-bottom: 7px;
 }
 .text-color {
-  color: rgb(20, 209, 181);
+  color: rgb(62, 183, 165);
 }
 .about-text h3 {
   margin-top: 0px;
@@ -355,7 +358,7 @@ html, body {
 /* Skills CSS start here  */
 
 #skills {
-  background-color: #454b52;
+  background-color: #4f5a66;
   color: white;
   height: 100vh;
 }
@@ -363,6 +366,7 @@ html, body {
   font-size: 36px;
   text-align: center;
   padding: 50px 0px;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
 }
 .skills-container {
   display: flex;
@@ -373,9 +377,10 @@ html, body {
 }
 .skills-linear {
   width: 40%;
-  background-color: #36393c;
+  background-color: #454b52;
   border-radius: 20px;
   padding: 20px;
+  box-shadow: 2px 2px 10px #ffff;
 }
 .skills-linear .title {
   font-size: 26px;
@@ -396,63 +401,61 @@ html, body {
   margin-bottom: 4px;
 }
 .progress-bar {
-  border: 1px solid rgb(20, 209, 181);
-  height: 0.5rem;
-  border-radius: 30px;
+  border: 2px solid rgb(62, 183, 165);
+  height: 0.7rem;
   background-color: #202d34;
 }
 .progress-bar span {
   display: block;
   height: 100%;
-  border-radius: 30px;
 }
 .skills-linear:nth-child(1) .skills-bar .skill:nth-child(1) .progress-bar span {
   width: 85%;
-  background-color: rgb(20, 209, 181);
+  background-color: rgb(62, 183, 165);
 }
 .skills-linear:nth-child(1) .skills-bar .skill:nth-child(2) .progress-bar span {
   width: 70%;
-  background-color: rgb(20, 209, 181);
+  background-color: rgb(62, 183, 165);
 }
 .skills-linear:nth-child(1) .skills-bar .skill:nth-child(3) .progress-bar span {
   width: 65%;
-  background-color: rgb(20, 209, 181);
+  background-color: rgb(62, 183, 165);
 }
 .skills-linear:nth-child(1) .skills-bar .skill:nth-child(4) .progress-bar span {
   width: 60%;
-  background-color: rgb(20, 209, 181);
+  background-color: rgb(62, 183, 165);
 }
 .skills-linear:nth-child(1) .skills-bar .skill:nth-child(5) .progress-bar span {
   width: 60%;
-  background-color: rgb(20, 209, 181);
+  background-color: rgb(62, 183, 165);
 }
 .skills-linear:nth-child(1) .skills-bar .skill:nth-child(6) .progress-bar span {
   width: 75%;
-  background-color: rgb(20, 209, 181);
+  background-color: rgb(62, 183, 165);
 }
 .skills-linear:nth-child(2) .skills-bar .skill:nth-child(1) .progress-bar span {
   width: 90%;
-  background-color: rgb(20, 209, 181);
+  background-color: rgb(62, 183, 165);
 }
 .skills-linear:nth-child(2) .skills-bar .skill:nth-child(2) .progress-bar span {
   width: 70%;
-  background-color: rgb(20, 209, 181);
+  background-color: rgb(62, 183, 165);
 }
 .skills-linear:nth-child(2) .skills-bar .skill:nth-child(3) .progress-bar span {
   width: 80%;
-  background-color: rgb(20, 209, 181);
+  background-color: rgb(62, 183, 165);
 }
 .skills-linear:nth-child(2) .skills-bar .skill:nth-child(4) .progress-bar span {
   width: 85%;
-  background-color: rgb(20, 209, 181);
+  background-color: rgb(62, 183, 165);
 }
 .skills-linear:nth-child(2) .skills-bar .skill:nth-child(5) .progress-bar span {
   width: 80%;
-  background-color: rgb(20, 209, 181);
+  background-color: rgb(62, 183, 165);
 }
 .skills-linear:nth-child(2) .skills-bar .skill:nth-child(6) .progress-bar span {
   width: 75%;
-  background-color: rgb(20, 209, 181);
+  background-color: rgb(62, 183, 165);
 }
 
 @media screen and (max-width: 1024px) {
@@ -494,7 +497,7 @@ html, body {
 /* Services CSS start here  */
 
 #certificate {
-  background-color: #36393c;
+  background-color: #454b52;
   color: white;
   height: 100%;
 }
@@ -507,7 +510,7 @@ html, body {
 .certificate-box {
   width: 30%;
   height: auto;
-  background-color: #454b52;
+  background-color: #4f5a66;
   border-radius: 20px;
   padding: 30px;
   margin: 15px;
@@ -516,12 +519,12 @@ html, body {
   box-shadow: none;
 }
 .certificate-box:hover {
-  box-shadow: 0 0 20px rgb(20, 209, 181);
-  transform: scale(1.02);
+  box-shadow: 0 0 20px rgb(62, 183, 165);
+  transform: scale(0.9);
 }
 .certificate-box i {
   font-size: 35px;
-  color: rgb(20, 209, 181);
+  color: rgb(62, 183, 165);
   margin-bottom: 20px;
 }
 .certificate-box h2 {
@@ -589,7 +592,7 @@ html, body {
 
 /* project CSS start here  */
 #projects {
-  background-color: #454b52;
+  background-color: #4f5a66;
   color: white;
   height: 110vh;
 }
@@ -628,7 +631,7 @@ html, body {
   padding: 0px 40px;
   transform: translateY(100%);
   transition: 0.3s ease;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgb(20, 209, 181));
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgb(62, 183, 165));
 }
 .project-box:hover .project-layer {
   transform: translateY(0%);
@@ -685,7 +688,7 @@ html, body {
 /* Contact CSS start here  */
 
 #contact {
-  background-color: #36393c;
+  background-color: #454b52;
   color: white;
   height: 100vh;
 }
@@ -704,7 +707,7 @@ html, body {
   padding: 15px;
   font-size: 1.2rem;
   border-radius: 10px;
-  background-color: #454b52;
+  background-color: #4f5a66;
   margin: 6px;
   border: none;
   color: white;
@@ -712,7 +715,7 @@ html, body {
 #query {
   font-size: 1.2rem;
   border-radius: 10px;
-  background-color: #454b52;
+  background-color: #4f5a66;
   border: none;
   resize: none;
   width: 98%;
@@ -774,7 +777,7 @@ html, body {
 }
 .footer-icon {
   background-color: #26353b;
-  border: 3.5px solid rgb(20, 209, 181);
+  border: 3.5px solid rgb(62, 183, 165);
   border-radius: 30px;
   color: white;
   padding-right: 20px;
@@ -792,7 +795,7 @@ html, body {
 .footer-icon i {
   font-size: 2.4rem;
   margin: 1px 15px;
-  color: rgb(20, 209, 181);
+  color: rgb(62, 183, 165);
 }
 .footer-icon span {
   opacity: 0;
@@ -806,7 +809,7 @@ html, body {
 }
 @media screen and (max-width: 1024px) {
   .footer-icon {
-    border: 3px solid rgb(20, 209, 181);
+    border: 3px solid rgb(62, 183, 165);
   }
   .footer-icon i {
     font-size: 2rem;
